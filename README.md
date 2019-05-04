@@ -15,11 +15,11 @@ baixe a versão mais recente do Python3 e instale.
 
 ## Programação em Python: 
 
-[Arquivos da aula de Programação em Python](https://github.com/jhoonb/autoria/python/)
+[Arquivos da aula de Programação em Python](https://github.com/jhoonb/autoria/tree/master/python)
 
 ## Programação para Internet:
 
-[Arquivos da aula de Programação para Internet](https://github.com/jhoonb/autoria/web/)
+[Arquivos da aula de Programação para Internet](https://github.com/jhoonb/autoria/tree/master/web)
 
 
 ## Slides
