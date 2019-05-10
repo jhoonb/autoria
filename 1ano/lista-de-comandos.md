@@ -15,6 +15,10 @@ COMANDOS NO PROMPT DE COMANDO
 * pause -> pausa/para e espera teclar algo
 * ping www.site.com
 * tracert www.google.com.br
+* copy <diretorio/arquivo> <diretorio/arquivo> -> copia o arquivo para o diretório
+* rename <arquivo-nome> <arquivo-novo-nome> -> renomeia o arquivo 
+* move <diretorio/arquivo> <diretorio/arquivo> -> move o arquivo para o diretório
+* type <arquivo-de-texto> -> exibe o conteúdo do arquivo de texto
 
 
 `(no teclado seta pra cima: histórico de comandos)
