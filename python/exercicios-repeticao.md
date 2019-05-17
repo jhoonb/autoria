@@ -49,10 +49,15 @@ Estado Civil: 's', 'c', 'v', 'd';
 
 12. Desenvolva um gerador de tabuada, capaz de gerar a tabuada de qualquer número inteiro entre 1 a 10. O usuário deve informar de qual numero ele deseja ver a tabuada. A saída deve ser conforme o exemplo abaixo:
 Tabuada de 5:
+
+`
 5 X 1 = 5
 5 X 2 = 10
+5 x 3 = 15
+5 x 4 = 20
+5 x 5 = 25
 ...
-5 X 10 = 50
+5 X 10 = 50`
 
 
 13. Faça um programa que peça dois números, base e expoente, calcule e mostre o primeiro número elevado ao segundo número. Não utilize a função de potência da linguagem.
