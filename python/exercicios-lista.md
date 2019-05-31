@@ -61,16 +61,16 @@ concorrentes e informar o vencedor da enquete. O formato
 da saída foi dado pela empresa, e é o seguinte:
 
 `
-Sistema Operacional     Votos   %
--------------------     -----   ---
-Windows Server           1500   17%
-Unix                     3500   40%
-Linux                    3000   34%
-Netware                   500    5%
-Mac OS                    150    2%
-Outro                     150    2%
--------------------     -----
-Total                    8800
+Sistema Operacional     Votos   %  
+-------------------     -----   ---  
+Windows Server           1500   17%  
+Unix                     3500   40%  
+Linux                    3000   34%  
+Netware                   500    5%  
+Mac OS                    150    2%  
+Outro                     150    2%  
+-------------------     -----  
+Total                    8800  
 `
 
 O Sistema Operacional mais votado foi o Unix, 
