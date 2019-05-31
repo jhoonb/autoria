@@ -42,12 +42,12 @@ lista.reverse() # ordem reversa da lista
 
 As possíveis respostas são:
 
-1- Windows Server
-2- Unix
-3- Linux
-4- Netware
-5- Mac OS
-6- Outro
+- 1- Windows Server
+- 2- Unix
+- 3- Linux
+- 4- Netware
+- 5- Mac OS
+- 6- Outro
 
 Você foi contratado para desenvolver um programa que leia
 o resultado da enquete e informe ao final o resultado da mesma.
@@ -60,6 +60,7 @@ programa deverá calcular a percentual de cada um dos
 concorrentes e informar o vencedor da enquete. O formato
 da saída foi dado pela empresa, e é o seguinte:
 
+`
 Sistema Operacional     Votos   %
 -------------------     -----   ---
 Windows Server           1500   17%
@@ -70,6 +71,7 @@ Mac OS                    150    2%
 Outro                     150    2%
 -------------------     -----
 Total                    8800
+`
 
 O Sistema Operacional mais votado foi o Unix, 
 com 3500 votos, correspondendo a 40% dos votos.
