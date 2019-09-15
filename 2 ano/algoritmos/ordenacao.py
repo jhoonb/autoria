@@ -42,8 +42,6 @@ def insertion_sort(vetor):
     return vetor
 
 
-
-
 def selection_sort(vetor):
     '''
     selection_sort -- pior caso O(n^2)
@@ -64,8 +62,45 @@ def selection_sort(vetor):
     return vetor
 
 
+def _merge(vetor_esq, vetor_dir):
+    """
+    merge
+    fonte: adaptado de https://wiki.python.org.br/MergeSort
+    Recebe dois vetores e intercala os dois vetores produzindo o vetor crescente
+    parametro:(list) vetor_esq, vetor_dir
+    retorno: (list) vetor_final
+    """
+    vetor_final = []
+    # print('\nentrou: {} - {}'.format(vetor_esq, vetor_dir)) #teste de mesa
+    while vetor_esq or vetor_dir:
+        if len(vetor_esq) and len(vetor_dir):
+            if vetor_esq[0] < vetor_dir[0]:
+                vetor_final.append(vetor_esq.pop(0))
+            else:
+                vetor_final.append(vetor_dir.pop(0))
+
+        if not len(vetor_esq):
+            if len(vetor_dir):
+                vetor_final.append(vetor_dir.pop(0))
+
+        if not len(vetor_dir):
+            if len(vetor_esq):
+                vetor_final.append(vetor_esq.pop(0))
+    #print("\n\t: saiu merge: {}".format(vetor_final)) # teste de mesa
+    return vetor_final
+
+
 def merge_sort(vetor):
-    pass
+    '''
+    merge_sort
+    recursivo
+    fonte: adaptado de https://wiki.python.org.br/MergeSort 
+    '''
+    if len(vetor) > 1:
+        meio = len(vetor) // 2
+        return _merge(merge_sort(vetor[:meio]), merge_sort(vetor[meio:]))
+    return vetor
+
 
 def quick_sort(vetor):
     pass
