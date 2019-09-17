@@ -14,11 +14,29 @@ def bubble_sort(vetor):
     '''
     for i in vetor:
         indice = 0
-        while indice <= len(vetor)-1:
-            if indice == len(vetor)-1:
-                break 
+        while indice < len(vetor)-1:
             if vetor[indice] > vetor[indice+1]:
-                vetor[indice], vetor[indice+1] = vetor[indice+1], vetor[indice]
+                vetor[indice], vetor[indice+1] = vetor[indice+1], vetor[indice] #swap
+            indice += 1
+    return vetor
+
+
+def bubble_sort2(vetor):
+    '''
+    bubble sort com variavél
+    pra checar se vetor está ordenado
+
+    '''
+    trocado = True
+    while trocado:
+        trocado = False
+        indice = 0
+        while indice < len(vetor)-1:
+            if vetor[indice] > vetor[indice + 1]:
+                aux = vetor[indice] # swap usando variavel auxiliar
+                vetor[indice] = vetor[indice + 1]
+                vetor[indice + 1] = aux
+                trocado = True
             indice += 1
     return vetor
 
@@ -33,14 +51,13 @@ def insertion_sort(vetor):
     indice = 1
     while indice < len(vetor):
         chave = vetor[indice]
-        j = indice
-        while (j > 0) and (vetor[j-1] > chave):
-            vetor[j] = vetor[j-1]
-            j -= 1
-        vetor[j] = chave 
+        k = indice
+        while k > 0 and chave < vetor[k - 1]:
+            vetor[k] = vetor[k - 1]
+            k -= 1
+        vetor[k] = chave
         indice += 1
     return vetor
-
 
 def selection_sort(vetor):
     '''
