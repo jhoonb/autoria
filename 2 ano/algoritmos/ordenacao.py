@@ -7,7 +7,7 @@ Escola Padre Constantino de Monte
 
 def bubble_sort(vetor):
     '''
-    bubble_sort -- pior caso O(n^2)
+    bubble_sort -- pior caso O(n^2) -- melhor caso O(n)
     wiki: https://pt.wikipedia.org/wiki/Bubble_sort
     parametro(list): um vetor 
     retorno (list): o vetor ordenado 
@@ -23,7 +23,7 @@ def bubble_sort(vetor):
 
 def bubble_sort2(vetor):
     '''
-    bubble sort com variavél
+    bubble sort com variável -- pior caso O(n^2) -- melhor caso O(n)
     pra checar se vetor está ordenado
 
     '''
@@ -43,7 +43,7 @@ def bubble_sort2(vetor):
 
 def insertion_sort(vetor):
     '''
-    insertion_sort -- pior caso O(n^2)
+    insertion_sort -- pior caso O(n^2) -- melhor caso O(n)
     wiki: https://pt.wikipedia.org/wiki/Insertion_sort
     parametro(list): um vetor 
     retorno (list): o vetor ordenado 
@@ -61,7 +61,7 @@ def insertion_sort(vetor):
 
 def selection_sort(vetor):
     '''
-    selection_sort -- pior caso O(n^2)
+    selection_sort -- pior caso O(n^2) -- melhor caso O(n^2)
     wiki: https://pt.wikipedia.org/wiki/Selection_sort
     parametro(list): um vetor 
     retorno (list): o vetor ordenado 
@@ -109,7 +109,7 @@ def _merge(vetor_esq, vetor_dir):
 
 def merge_sort(vetor):
     '''
-    merge_sort
+    merge_sort -- pior caso: O(n log n) -- melhor caso O(n log n)
     recursivo
     fonte: adaptado de https://wiki.python.org.br/MergeSort 
     '''
@@ -120,4 +120,45 @@ def merge_sort(vetor):
 
 
 def quick_sort(vetor):
-    pass
+    '''
+    quick_sort -- pior caso O(n^2) -- melhor caso O(n log n)
+    fonte: https://www.dcc.fc.up.pt/~pbv/aulas/progimp/teoricas/teorica18.html
+    parametro(list): um vetor 
+    retorno (list): o vetor ordenado
+    '''
+    if len(vetor) <= 1: return vetor
+    
+    pivo = vetor[0]
+
+    menor = []
+    igual = []
+    maior = []
+    
+    for i in vetor: 
+        if i < pivo: menor.append(i)
+    for i in vetor: 
+        if i == pivo: igual.append(i)
+    for i in vetor: 
+        if i > pivo: maior.append(i)
+
+    return quick_sort(menor) + igual + quick_sort(maior)
+
+
+def quick_sort2(vetor):
+    '''
+    quick_sort -- pior caso O(n^2) -- melhor caso O(n log n)
+    fonte: https://www.dcc.fc.up.pt/~pbv/aulas/progimp/teoricas/teorica18.html
+    parametro(list): um vetor 
+    retorno (list): o vetor ordenado
+    Usando compreensão de listas - list comprehension
+    '''
+
+    if len(vetor) <= 1: return vetor
+
+    pivo = vetor[0]
+
+    menor = [i for i in vetor if i < pivo]
+    igual = [i for i in vetor if i == pivo]
+    maior = [i for i in vetor if i > pivo]
+
+    return quick_sort2(menor) + igual + quick_sort2(maior)
