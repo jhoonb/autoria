@@ -1,0 +1,14 @@
+#
+# desafio 2 - exercicio 1
+#
+
+idade = leia_inteiro
+anos = idade div 365
+saldo = idade - (anos * 365)
+meses = saldo div 30
+dias = saldo - meses * 30
+
+escreva "{anos}, ano(s)"
+escreva "{meses}, mes(es)"
+escreva "{dias}, dia(s)"
+
