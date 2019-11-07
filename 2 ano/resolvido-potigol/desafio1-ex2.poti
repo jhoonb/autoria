@@ -1,0 +1,9 @@
+#
+# desafio 1 - exercicio 2
+#
+
+escreva "informe o raio: "
+raio = leia_real
+
+area = PI * (raio^2) # pi * (raio * raio)
+escreva "A = {area}"

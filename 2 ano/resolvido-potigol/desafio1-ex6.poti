@@ -1,0 +1,13 @@
+#
+# desafio 1 - exercicio 6
+#
+
+escreva "informe a distancia percorrida: "
+X = leia_inteiro
+
+escreva "informe total de combustivel gasto: "
+Y = leia_real
+
+media = x/y
+
+escreva "{media} km/l"

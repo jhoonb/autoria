@@ -1,0 +1,16 @@
+#
+# desafio 1 - exercicio 3
+#
+
+peso1 = 3.5
+peso2 = 7.5
+
+escreva "Informe a nota 1: "
+nota1 = leia_real
+
+escreva "Informe a nota 2: "
+nota2 = leia_real
+
+media = ((nota1 * peso1) + (peso2 * peso2)) / 11
+
+escreva "MEDIA = {media}" 

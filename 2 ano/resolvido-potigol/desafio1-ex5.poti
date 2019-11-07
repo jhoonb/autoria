@@ -1,0 +1,17 @@
+#
+# desafio 1 - exercicio 5
+#
+
+escreva "digite o nome do vendedor: "
+nome_vendedor = leia_texto
+
+escreva "digite o salário fixo: "
+salario_fixo = leia_real
+
+escreva "digite a quantidade de vendas em reais: "
+venda = leia_real
+
+comissao = venda * 0.15 #(venda * 15) / 100
+salario_total = salario_fixo + comissao
+
+escreva "TOTAL = {salario_total}"

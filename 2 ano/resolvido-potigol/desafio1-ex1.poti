@@ -1,0 +1,18 @@
+#
+# desafio 1 - exercicio 1
+#
+
+escreva "informe o valor pra A: "
+A = leia_inteiro 
+
+escreva "informe o valor pra B: "
+B = leia_inteiro
+
+X = A + B
+
+escreva "X = {X}"
+
+########### ou
+# A, B = leia_inteiro
+# escreva "X = {A + B}"
+#

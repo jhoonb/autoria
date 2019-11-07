@@ -1,0 +1,17 @@
+#
+# desafio 1 - exercicio 4
+#
+
+escreva "digite o numero do funcionario: "
+num = leia_inteiro
+
+escreva "digite o número de hrs trabalhas: "
+horas = leia_real
+
+escreva "digite o valor por hora trabalhada: "
+valor_hora = leia_real
+
+salario = horas * valor_hora
+
+escreva "NUMERO = {num}"
+escreva "SALÁRIO = R$$ {salario}"

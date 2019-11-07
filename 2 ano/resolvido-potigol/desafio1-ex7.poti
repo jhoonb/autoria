@@ -1,0 +1,8 @@
+#
+# desafio 1 - exercicio 7
+#
+
+escreva "digite o raio: "
+r = leia_real
+volume = (4/3.0) * PI * (r^3)
+escreva "VOLUME = {volume}"

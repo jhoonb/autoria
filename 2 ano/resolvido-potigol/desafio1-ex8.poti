@@ -1,0 +1,14 @@
+#
+# desafio 1 - exercicio 8
+#
+
+escreva "digite o valor p/ x1 e p/ y1: "
+x1, y1 = leia_real
+
+escreva "digite o valor p/ x2 e p/ y2: "
+x2, y2 = leia_real
+
+distancia = raiz(((x2 - x1)^2) + ((y2 - y1)^2))
+
+escreva "{distancia}"
+

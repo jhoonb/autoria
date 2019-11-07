@@ -1,0 +1,11 @@
+#
+# desafio 1 - exercicio 9
+#
+escreva "o valor pra n e pra m: "
+n, m = leia_inteiro
+
+resultado = n^m # Real
+tamanho = resultado.inteiro.texto.tamanho
+escreva "{tamanho}"
+
+
