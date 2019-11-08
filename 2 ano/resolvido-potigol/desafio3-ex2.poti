@@ -1,0 +1,9 @@
+#
+# desafio 3 - exercicio 
+#
+
+escreva "digite 3 valores: "
+valores = leia_inteiros(3)
+
+escreva "ordenado: {valores.ordene}"
+escreva "original: {valores}"

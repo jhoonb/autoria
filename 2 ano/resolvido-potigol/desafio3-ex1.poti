@@ -1,0 +1,28 @@
+#
+# desafio 3 - exercicio 1
+#
+escreva "digite o salario: "
+salario = leia_real
+
+var percentual := 0
+
+se salario > 0 e salario <= 400 então
+  percentual := 15
+senãose salario >= 400.01 e salario <= 800.00 então
+  percentual := 12
+senãose salario >= 800 e salario <= 1200.00 então
+  percentual := 10
+senãose salario >= 1200.01 e salario <= 2000.00 então
+  percentual := 7
+senão
+  # maior que 2000.00
+  percentual := 4
+fim
+
+reajuste = (percentual * salario) / 100
+novo_salario = salario + reajuste
+
+escreva "Novo Salario: R$$ {novo_salario}"
+escreva "Reajuste ganho: R$$ {reajuste}"
+escreva "Percentual: {percentual} %"
+

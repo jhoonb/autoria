@@ -1,0 +1,27 @@
+#
+# desafio 2 - exercicio 2
+#
+
+escreva "digite o código do item: "
+codigo = leia_inteiro
+escreva "digite a quantidade: "
+quantidade = leia_inteiro
+
+var total := 0.0
+
+se codigo == 1 então
+  total := 4.00 * quantidade
+senaose codigo == 2 então
+  total := 4.50 * quantidade
+senaose codigo == 3 então
+  total := 5.00 * quantidade
+senaose codigo == 4 então
+  total := 2.00 * quantidade
+senaose codigo == 5 então
+  total := 1.50 * quantidade
+senão
+    escreva "código inválido"
+fim
+
+escreva "Total RS: {total}"
+
