@@ -1,0 +1,34 @@
+"""
+         jogo da adivinhação
+O PC escolhe um número entre 0 e 10.
+O jogador escolhe um número.
+- Se o número escolhido pelo jogador for igual
+ao numero escolhido pelo PC então o jogo se encerra
+e o jogador VENCE.
+- O jogador tem 3 tentativas, se não acertar o
+jogo se encerra!
+
+"""
+
+numero_pc = aleatório(0, 10)
+var numero_usuario := -1
+var tentativas := 3
+
+enquanto (numero_usuario <> numero_pc) e (tentativas > 0) faça
+
+  escreva "informe um numero (0-10): "
+  numero_usuario := leia_inteiro
+  se numero_usuario == numero_pc então
+    escreva "ACERTOU"
+  senão
+    escreva "ERROUUUUU"
+    tentativas := tentativas - 1
+    escreva "tentativas restantes: {tentativas}"
+    se tentativas == 0 então
+      escreva "FIM DO JOGO! você perdeu"
+    fim
+  fim
+  
+fim
+
+escreva "pc: {numero_pc}"
