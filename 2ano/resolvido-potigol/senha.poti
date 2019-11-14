@@ -1,0 +1,20 @@
+"""Faça um programa que leia um nome 
+de usuário e a sua senha e 
+não aceite a senha igual ao
+ nome do usuário, mostrando 
+ uma mensagem de erro e voltando
+  a pedir as informações."""
+
+nome_certo = "admin"
+senha_certa = "12345.@"  
+var nome := ""
+var senha := ""
+
+enquanto nome <> nome_certo ou senha <> senha_certa faça
+  escreva "nome: "
+  nome := leia_texto
+  escreva "senha: "
+  senha := leia_texto
+fim
+
+escreva "nome e senha diferente"
