@@ -1,10 +1,10 @@
-"""Faça um programa que leia 5 números
-e informe a soma
-e a média dos números.
-"""
+# inicia os valores 
 var num := 0.0
 var soma := 0.0
 var contador := 1
+
+# condição de parada do loop:
+# se o contador for maior que 5 para o loop
 enquanto contador <= 5 faça
   escreva "digite o número: "
   num := leia_real
@@ -12,6 +12,7 @@ enquanto contador <= 5 faça
   contador := contador + 1
 fim
 
+# calcula a média
 media = soma / 5
 escreva "soma: {soma}"
 escreva "media: {media}"

@@ -1,0 +1,16 @@
+escreva "programa de tabuada"
+
+escreva "digite o valor a calcular: "
+tabuada_do = leia_inteiro
+
+escreva "até...: "
+maximo = leia_inteiro
+
+# variavel pro incremento e controle do loop
+var contador := 1
+
+enquanto contador <= maximo faça
+  escreva "{tabuada_do} x {contador} = {tabuada_do * contador}"
+  contador := contador + 1
+fim
+
